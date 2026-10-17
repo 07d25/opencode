@@ -1,0 +1,40 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Weather CLI build artifact
+/clima
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+
+
+# Prisma
+/app/generated/prisma
+/generated 
+
+Kitbe/
+data/
+# Captura de emails para E2E/dev
+.e2e-emails.jsonl
+
+# Backups lógicos (Fase 2C)
+backups/
+
+reports/
