@@ -49,6 +49,38 @@
   --color-placeholder-line: #dbcdba;
   --color-placeholder-text: #b0a290;
 
+  /* Avatares de niños (pantallas/ninos.dc.html) */
+  --color-pink: #f4b8cc;
+  --color-pink-deep: #c44a7a;
+  --color-mint-avatar: #b9dec4;
+  --color-mint-avatar-deep: #3e8b62;
+  --color-yellow: #f4dc8e;
+  --color-yellow-deep: #9a7b1e;
+  --color-violet: #c9b6e8;
+  --color-violet-deep: #7b5fc0;
+  --color-parent-blue: #a9c7e8;
+
+  /* Etiquetas de estado de las cards de niños */
+  --color-badge-alert: #fbd8cc;
+  --color-badge-alert-text: #d9684a;
+  --color-badge-link: #f9d2de;
+  --color-badge-link-text: #c56486;
+
+  /* Panel de alergias y notas */
+  --color-alert-surface: #fbdad6;
+  --color-alert-icon: #f4a8a0;
+  --color-alert-title: #c5413a;
+  --color-alert-text: #b25249;
+
+  /* Chevrons y hover de cards */
+  --color-chevron: #cbb89f;
+  --color-card-hover: #f2a78e;
+
+  /* Formularios y estados auxiliares */
+  --color-field-placeholder: #b6a99b;
+  --color-pending-soft: #f7e7a6;
+  --color-dashed-line: #d8cbba;
+
   /* Sombras */
   --shadow-card: 0 4px 16px -12px rgb(120 90 60 / 0.5);
   --shadow-cta: 0 8px 18px -8px rgb(238 129 100 / 0.75);
