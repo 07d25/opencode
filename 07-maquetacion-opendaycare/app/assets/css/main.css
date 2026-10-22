@@ -1,0 +1,138 @@
+@import 'tailwindcss';
+
+/*
+ * Tokens del diseño de referencia (pantallas/feed.dc.html), mapeados 1:1.
+ * Fredoka para títulos/avatares, Nunito para el cuerpo.
+ */
+@theme {
+  --font-sans: 'Nunito', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+
+  /* Superficies y bordes */
+  --color-surf: #f6ecdf;
+  --color-surface: #fffdf9;
+  --color-hairline: #ece0d0;
+  --color-divider: #e7dac8;
+  --color-divider-soft: #f0e6d8;
+  --color-scrollbar: #e4d6c4;
+
+  /* Texto */
+  --color-ink: #3f362e;
+  --color-body: #4a4038;
+  --color-muted: #a89a8b;
+  --color-muted-soft: #94887b;
+  --color-nav: #6e6359;
+  --color-faint: #8a7c6d;
+
+  /* Terracota / coral (acciones y marca) */
+  --color-terracotta: #d9583c;
+  --color-accent: #e0654a;
+  --color-edit: #c5503a;
+  --color-coral: #f2937a;
+  --color-coral-light: #f8c3a8;
+  --color-coral-soft: #fbe3d8;
+  --color-coral-500: #f4977e;
+  --color-coral-600: #ee8164;
+
+  /* Semáforo de tipos de publicación */
+  --color-mint: #3e9b6c;
+  --color-mint-soft: #cfebd8;
+  --color-blue: #2e89a6;
+  --color-sky: #a9d9e8;
+  --color-sky-deep: #1f7a93;
+  --color-sky-soft: #c7e7f1;
+  --color-royal: #4e72c8;
+  --color-royal-soft: #ccd8f4;
+
+  /* Placeholder de foto */
+  --color-placeholder: #f4ece1;
+  --color-placeholder-line: #dbcdba;
+  --color-placeholder-text: #b0a290;
+
+  /* Avatares de niños (pantallas/ninos.dc.html) */
+  --color-pink: #f4b8cc;
+  --color-pink-deep: #c44a7a;
+  --color-mint-avatar: #b9dec4;
+  --color-mint-avatar-deep: #3e8b62;
+  --color-yellow: #f4dc8e;
+  --color-yellow-deep: #9a7b1e;
+  --color-violet: #c9b6e8;
+  --color-violet-deep: #7b5fc0;
+  --color-parent-blue: #a9c7e8;
+
+  /* Etiquetas de estado de las cards de niños */
+  --color-badge-alert: #fbd8cc;
+  --color-badge-alert-text: #d9684a;
+  --color-badge-link: #f9d2de;
+  --color-badge-link-text: #c56486;
+
+  /* Panel de alergias y notas */
+  --color-alert-surface: #fbdad6;
+  --color-alert-icon: #f4a8a0;
+  --color-alert-title: #c5413a;
+  --color-alert-text: #b25249;
+
+  /* Chevrons y hover de cards */
+  --color-chevron: #cbb89f;
+  --color-card-hover: #f2a78e;
+
+  /* Formularios y estados auxiliares */
+  --color-field-placeholder: #b6a99b;
+  --color-field-border: #eadfd0;
+
+  /* Pantallas de login y activación de cuenta */
+  --color-cream: #fbf4ec;
+  --color-coral-450: #f6a98e;
+  --color-coral-deep: #ec7e62;
+  --color-consent: #fbf1d6;
+  --color-consent-text: #8a7234;
+  --color-check-green: #5fb97e;
+  --color-pending-soft: #f7e7a6;
+  --color-dashed-line: #d8cbba;
+
+  /* Aviso informativo y código de invitación (pantallas/vincular-padre.dc.html) */
+  --color-royal-banner: #e3ecfb;
+  --color-royal-border: #9fb8ec;
+  --color-royal-deep: #3f5694;
+  --color-gold: #a88526;
+  --color-gold-border: #e6d08a;
+
+  /* Tipos de publicación (pantallas/crear-publicacion.dc.html) */
+  --color-type-food: #9a7b1e;
+  --color-type-food-soft: #f4dc8e;
+  --color-type-nap: #7b5fc0;
+  --color-type-nap-soft: #e7dcf6;
+  --color-type-activity: #2e89a6;
+  --color-type-activity-soft: #c7e7f1;
+  --color-type-achievement: #3e9b6c;
+  --color-type-achievement-soft: #cfebd8;
+  --color-type-mood: #c56486;
+  --color-type-mood-soft: #f9d2de;
+  --color-type-photo: #d9684a;
+  --color-type-photo-soft: #fbd8cc;
+  --color-type-announcement: #4e72c8;
+  --color-type-announcement-soft: #ccd8f4;
+
+  /* Sombras */
+  --shadow-card: 0 4px 16px -12px rgb(120 90 60 / 0.5);
+  --shadow-cta: 0 8px 18px -8px rgb(238 129 100 / 0.75);
+  --shadow-prompt: 0 4px 14px -10px rgb(120 90 60 / 0.4);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surf);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}

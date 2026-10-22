@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "command": {
+    "spec": {
+      "description": "Crea especificaciones de pantallas y funcionalidades",
+      "template": "Carga y sigue la skill spec en .opencode/skills/spec/SKILL.md.\n\nFeature: $ARGUMENTS"
+    }
+  },
+  "mcp": {
+    "servers": {
+      "playwright": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@playwright/mcp@latest",
+          "--browser",
+          "chromium"
+        ]
+      }
+    }
+  }
+}
